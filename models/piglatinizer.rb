@@ -30,8 +30,7 @@ class PigLatinizer
     character.match(/aAeEiIoOuU/)
   end
 
-  def latinized
-    @phrase.map do |word|
+  def latinize_word(word)
       if word[0].consonant?
         word  = word + "w"
         elsif word[0, 1].consonant?
@@ -43,7 +42,6 @@ class PigLatinizer
       end
       word + "ay"
     end
-  end
 
   def latinize_sentence(sentence)
     sentence.split.collect { |word| piglatinize_word(word) }.join(" ")
