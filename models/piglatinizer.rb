@@ -42,6 +42,7 @@ class PigLatinizer
           word = word.slice(1..-1) + word.slice(0)
       end
       word + "ay"
+    end
   end
 
 
