@@ -33,16 +33,15 @@ class PigLatinizer
   def latinized
     @phrase.map do |word|
       if word[0].consonant?
-        word  = word + w
+        word  = word + "w"
         elsif word[0, 1].consonant?
-          word - word[0, 1]
-
-      if word.length == 1
-        word + way
-      elsif word[0].match(/aAeEiIoOuU/)
-        word+w
+          word = word.slice(2..-1) + word.slice(0,2)
+        elsif word[0..2].consonant?
+          word = word.slice(3..-1) + word.slice(0,3)
+        else
+          word = word.slice(1..-1) + word.slice(0)
       end
-      word + ay
+      word + "ay"
 
   end
 
