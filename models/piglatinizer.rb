@@ -10,16 +10,14 @@ class PigLatinizer
 
   end
 
-  def piglatinize(text)
-    # text.to_piglatin
+  # def translate(text)
+  #   # text.to_piglatin
+  # end
 
-   text.splits(word)
-  end
-
-  def splits(word)
-    @phrase = []
-    @phrase << word.split
-    latinized
+  def piglatinize(word)
+    x = (input_str.split(" ").length == 1) ? piglatinize_word(word) : piglatinize_sentence(input_str)
+    puts x
+    x
   end
 
   def consonant?(character)
