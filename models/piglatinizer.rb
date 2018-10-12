@@ -11,7 +11,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    text.to_piglatin
+    # text.to_piglatin
 
    text.splits(word)
   end
@@ -42,7 +42,6 @@ class PigLatinizer
           word = word.slice(1..-1) + word.slice(0)
       end
       word + "ay"
-
   end
 
 
