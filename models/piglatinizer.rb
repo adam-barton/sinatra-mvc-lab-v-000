@@ -19,10 +19,6 @@ class PigLatinizer
   #   !character.match(/aAeEiIoOuU/)
   # end
   #
-  # def vowel?(character)
-  #   character.match(/aAeEiIoOuU/)
-  # end
-  #
   # def latinize_word(word)
   #     if word[0].consonant?
   #       word  = word + "w"
