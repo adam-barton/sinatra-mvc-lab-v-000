@@ -41,7 +41,8 @@ class PigLatinizer
         word + way
       elsif word[0].match(/aAeEiIoOuU/)
         word+w
-
+      end
+      word + ay
 
   end
 
