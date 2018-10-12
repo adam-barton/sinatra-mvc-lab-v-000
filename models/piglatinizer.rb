@@ -5,8 +5,8 @@ require 'pry'
 class PigLatinizer
 
 
-  def translate(text)
-    # text.to_piglatin
+  def piglatinize(text)
+     text.to_piglatin
   end
   #
   # def piglatinize(text)
