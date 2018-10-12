@@ -5,9 +5,9 @@ require 'pry'
 class PigLatinizer
 
 
-  def translate(text)
-     text.to_piglatin
-  end
+  # def translate(text)
+  #    text.to_piglatin
+  # end
 
     def piglatinize(input_str)
       x = (input_str.split(" ").length == 1) ? piglatinize_word(input_str) : piglatinize_sentence(input_str)
