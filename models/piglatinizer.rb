@@ -4,11 +4,6 @@ require 'pry'
 
 class PigLatinizer
 
-  attr_reader :text
-
-  def initialize
-
-  end
 
   # def translate(text)
   #   # text.to_piglatin
